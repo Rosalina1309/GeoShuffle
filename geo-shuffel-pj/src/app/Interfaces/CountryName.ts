@@ -1,11 +1,11 @@
 export interface CountryName {
   name: {
-    common: String;
-    official: String;
+    common: string;
+    official: string;
     nativeName: {
     eng: {
-      official: String;
-      common: String;
+      official: string;
+      common: string;
     }
   }
   }
