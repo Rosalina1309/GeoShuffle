@@ -16,7 +16,7 @@ export class CountriesComponent implements OnInit {
   async ngOnInit() {
     try {
       const countriesData: CountryName[] = await getCountriesFromAPI();
-      this.countryNameList = countriesData.map(country => country.name.official);
+      this.countryNameList = countriesData.map(country => country.name.common);
     } catch (err) {
       console.error('Error fetching countries:', err);
     }
